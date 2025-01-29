@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MyMusic Platform</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <h1 class="logo">My<span>Music</span></h1>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="discover.html">Search</a></li>
+        <li><a href="library.html">Library</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="register.html">Register</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <div class="container">
+    <h2 class="theme-heading">Feel the Rhythm 🎶</h2>
+    <div class="player">
+      <div class="cover">
+        <img id="cover-image" src="cover1.jpg" alt="Album Cover">
+      </div>
+      <h2 id="song-title">Song Title</h2>
+      <p id="artist-name">Artist Name</p>
+      
+      <div class="controls">
+        <button id="prev">⏮️</button>
+        <button id="play">▶️</button>
+        <button id="next">⏭️</button>
+      </div>
+
+      <div class="volume-controls">
+        <button id="volume-down">🔉</button>
+        <input type="range" id="volume-bar" min="0" max="1" step="0.1" value="1">
+        <button id="volume-up">🔊</button>
+      </div>
+
+      <div class="progress-container">
+        <input type="range" id="progress-bar" value="0">
+      </div>
+    </div>
+
+    <ul class="playlist">
+      <li data-index="0">THE DARK</li>
+      <li data-index="1">FADED</li>
+      <li data-index="2">LOFI study music</li>
+      <li data-index="3">Summer Rain</li>
+      <li data-index="4">Calm Night - Piano Music</li>
+    </ul>
+  </div>
+
+  <footer>© 2024 MyMusic. All Rights Reserved.</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
