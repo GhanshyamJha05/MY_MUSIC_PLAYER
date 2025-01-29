@@ -28,7 +28,7 @@ MY_MUSIC_PLAYER/
 ## Installation & Usage
 1. Clone the repository:
    ```sh
-   git clone https://github.com/your-username/MY_MUSIC_PLAYER.git
+   git clone https://github.com/GhanshyamJha05/MY_MUSIC_PLAYER.git
    ```
 2. Open `index.html` in a web browser.
 3. Ensure all required files are present in the project folder for a complete experience.
