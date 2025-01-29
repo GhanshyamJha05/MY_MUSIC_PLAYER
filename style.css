@@ -1,0 +1,178 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body and Background Styling */
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #699d6c, #74b272, #446c69);
+    color: #fff;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+  
+  /* Navbar */
+  .navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.6);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+  
+  .logo {
+    font-size: 2rem;
+    color: #c81707;
+  }
+  
+  .logo span {
+    color: #ffd700;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+  }
+   
+  .nav-links li {
+    margin-left: 1rem;
+  }
+  
+  .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+  }
+  
+  .nav-links a:hover {
+    color: #ffd700;
+  }
+  
+  /* Theme Heading */
+  .theme-heading {
+    margin-top: 1rem;
+    font-size: 2rem;
+    text-align: center;
+    color: #23ff44;
+    text-shadow: 2px 2px 4px #000;
+  }
+  
+  /* Player Section */
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    max-width: 600px;
+    margin: 2rem auto;
+  }
+  
+  .player {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    margin-bottom: 2rem;
+    animation: fadeIn 1.2s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Album Cover */
+  .cover img {
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+  }
+  
+  /* Control Buttons */
+  .controls button,
+  .volume-controls button {
+    background-color: #88f076;
+    border: none;
+    padding: 1rem;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .controls button:hover,
+  .volume-controls button:hover {
+    background-color: #973a31;
+    transform: scale(1.1);
+  }
+  
+  /* Volume Controls */
+  .volume-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    gap: 10px;
+  }
+  
+  #volume-bar {
+    width: 100px;
+  }
+  
+  /* Progress Bar */
+  .progress-container {
+    width: 100%;
+    margin-top: 1rem;
+  }
+  
+  #progress-bar {
+    width: 100%;
+    background: #ffd700;
+  }
+  
+  /* Playlist */
+  .playlist {
+    margin-top: 2rem;
+    list-style: none;
+    width: 100%;
+  }
+  
+  .playlist li {
+    padding: 0.8rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin-bottom: 0.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .playlist li:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  
+  /* Footer */
+  footer {
+    margin-top: 2rem;
+    padding: 1rem;
+    text-align: center;
+    color: #ffd700;
+    font-size: 0.9rem;
+  }
+  
